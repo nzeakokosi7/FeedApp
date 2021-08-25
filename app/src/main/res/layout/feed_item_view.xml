@@ -3,6 +3,7 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.elyeproj.loaderviewlibrary.LoaderImageView
@@ -12,10 +13,13 @@
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:layout_collapseMode="parallax"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="10dp"/>
 
     <LinearLayout
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/display_image"
+        android:padding="10dp"
+        android:layout_marginBottom="70dp"
         android:id="@+id/detail_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

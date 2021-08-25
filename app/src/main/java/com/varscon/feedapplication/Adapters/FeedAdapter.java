@@ -51,16 +51,28 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedViewModel>
             if(current.getCard_type().equals("text")) {
                 mFeedTitle.setText(current.getCard().getValue());
                 mFeedTitle.setTextSize(current.getCard().getAttributes().getFont().getSize());
+                mFeedTitle.setTextColor(Color.parseColor(current.getCard().getAttributes().getTextColor()));
 
 
             } else if(current.getCard_type().equals("title_description")) {
                 mFeedTitle.setText(current.getCard().getTitle().getValue());
                 mFeedTitle.setTextSize(current.getCard().getTitle().getAttributes().getFont().getSize());
+                mFeedTitle.setTextColor(Color.parseColor(current.getCard().getTitle().getAttributes().getTextColor()));
+
+                mFeedDesc.setText(current.getCard().getDescription().getValue());
+                mFeedDesc.setTextSize(current.getCard().getDescription().getAttributes().getFont().getSize());
+                mFeedDesc.setTextColor(Color.parseColor(current.getCard().getDescription().getAttributes().getTextColor()));
 
             } else {
 
                 mFeedTitle.setText(current.getCard().getTitle().getValue());
                 mFeedTitle.setTextSize(current.getCard().getTitle().getAttributes().getFont().getSize());
+                mFeedTitle.setTextColor(Color.parseColor(current.getCard().getTitle().getAttributes().getTextColor()));
+
+                mFeedDesc.setText(current.getCard().getDescription().getValue());
+                mFeedDesc.setTextSize(current.getCard().getDescription().getAttributes().getFont().getSize());
+                mFeedDesc.setTextColor(Color.parseColor(current.getCard().getDescription().getAttributes().getTextColor()));
+
                 mFeedImage.setMinimumHeight(current.getCard().getImage().getSize().getHeight());
                 mFeedImage.setMinimumWidth(current.getCard().getImage().getSize().getWidth());
                 setImage(current.getCard().getImage().getUrl());

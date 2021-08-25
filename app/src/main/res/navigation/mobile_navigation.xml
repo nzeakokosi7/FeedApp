@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.varscon.feedapplication.ui.main.MainFragment"
-        android:label="main_fragment"
+        android:label="Feeds"
         tools:layout="@layout/main_fragment" />
 </navigation>
