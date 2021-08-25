@@ -9,7 +9,7 @@ import retrofit2.http.Headers;
 
 public interface ApiInterface {
     @Headers("Content-Type: application/json")
-    @GET("test/home/")
+    @GET("test/home")
     Call<ApiResponse> getFeeds();
 
 }

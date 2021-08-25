@@ -1,8 +1,14 @@
 package com.varscon.feedapplication.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Description {
+    @SerializedName("value")
     private String value;
+
+    @SerializedName("attributes")
     private Attributes attributes;
+
     public String getValue() {
         return value;
     }

@@ -1,8 +1,14 @@
 package com.varscon.feedapplication.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Attributes {
+    @SerializedName("text_color")
     private String textColor;
+
+    @SerializedName("font")
     private Font font;
+
     public String getTextColor() {
         return textColor;
     }

@@ -1,8 +1,14 @@
 package com.varscon.feedapplication.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Size {
+    @SerializedName("width")
     private Integer width;
+
+    @SerializedName("height")
     private Integer height;
+
     public Integer getWidth() {
         return width;
     }

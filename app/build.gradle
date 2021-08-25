@@ -48,6 +48,11 @@ dependencies {
     //loader view
     implementation 'com.elyeproj.libraries:loaderviewlibrary:2.0.0'
 
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'androidx.annotation:annotation:1.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
 
 
 }

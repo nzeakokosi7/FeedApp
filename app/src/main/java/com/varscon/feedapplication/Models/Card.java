@@ -1,39 +1,28 @@
 package com.varscon.feedapplication.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Card {
-    private String value;
-    private Attributes attributes;
-    private Title title;
-    private Description description;
-    private Image image;
-    public String getValue() {
-        return value;
+
+    @SerializedName("card_type")
+    private String card_type;
+
+    @SerializedName("card")
+    private _Card card;
+
+    public String getCard_type() {
+        return card_type;
     }
-    public void setValue(String value) {
-        this.value = value;
+
+    public void setCard_type(String card_type) {
+        this.card_type = card_type;
     }
-    public Attributes getAttributes() {
-        return attributes;
+
+    public _Card getCard() {
+        return card;
     }
-    public void setAttributes(Attributes attributes) {
-        this.attributes = attributes;
-    }
-    public Title getTitle() {
-        return title;
-    }
-    public void setTitle(Title title) {
-        this.title = title;
-    }
-    public Description getDescription() {
-        return description;
-    }
-    public void setDescription(Description description) {
-        this.description = description;
-    }
-    public Image getImage() {
-        return image;
-    }
-    public void setImage(Image image) {
-        this.image = image;
+
+    public void setCard(_Card card) {
+        this.card = card;
     }
 }

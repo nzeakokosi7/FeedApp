@@ -1,5 +1,7 @@
 package com.varscon.feedapplication.ui.main;
 
+import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -31,15 +33,19 @@ public class MainViewModel extends ViewModel {
         call.enqueue(new Callback<ApiResponse>() {
             @Override
             public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+
+                Log.d("Response", response.toString());
                 if (response.isSuccessful()) {
                     assert response.body() != null;
                     cardList.setValue(response.body().getPage().getCards());
+                } else {
+                    Log.d("SSSS", response.message());
                 }
             }
 
             @Override
             public void onFailure(Call<ApiResponse> call, Throwable t) {
-
+                Log.d("Err", t.getMessage());
             }
         });
     }

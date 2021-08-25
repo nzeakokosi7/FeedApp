@@ -1,8 +1,14 @@
 package com.varscon.feedapplication.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Image {
+    @SerializedName("url")
     private String url;
+
+    @SerializedName("size")
     private Size size;
+
     public String getUrl() {
         return url;
     }

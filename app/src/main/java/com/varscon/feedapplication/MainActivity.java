@@ -8,7 +8,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 
-import com.varscon.feedapplication.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
